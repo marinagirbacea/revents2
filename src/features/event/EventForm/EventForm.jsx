@@ -74,7 +74,7 @@ class EventForm extends Component {
           <Header sub color='teal' content='Event Details'/>
         <Form onSubmit={this.handleFormSubmit} autoComplete='off'>
          <Field name='title' component={TextInput} placeholder='Give your event a name'/>
-         <Field name='category' component={TextInput} options={category} placeholder='What is your event about?'/>
+         <Field name='category' component={SelectInput} options={category} placeholder='What is your event about?'/>
          <Field name='description' component={TextArea} rows={3} placeholder='Tell us about your event'/>
          <Header sub color='teal' content='Event Location Details'/>
          <Field name='city' component={TextInput} placeholder='Event City'/>
